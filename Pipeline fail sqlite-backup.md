@@ -1,9 +1,8 @@
 ---
 Created at: Tuesday 06-10-2026 – 16:16
-Modified at: Thursday 08-10-2026 – 17:14
+Modified at: Monday 12-10-2026 – 13:43
 ---
-
-During BLAIS5-5318
+During [[BLAIS5-5318]]
 
 sqlite-backup
 - backup up files from windows VMs
