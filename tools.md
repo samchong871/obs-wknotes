@@ -1,6 +1,6 @@
 ---
 Created at: Tuesday 06-10-2026 – 19:56
-Modified at: Thursday 08-10-2026 – 16:11
+Modified at: Thursday 08-10-2026 – 17:55
 ---
 # Installing tools
 
@@ -21,8 +21,7 @@ Modified at: Thursday 08-10-2026 – 16:11
 
 After installing miniconda, `conda init` or `conda init zsh` should run automatically.
 
-Check `.zshrc` contains the conda setup block which looks something like this
-
+Check `.zshrc` contains the conda setup block which looks something like this:
 ```zsh
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -40,4 +39,16 @@ unset __conda_setup
 # <<< conda initialize <<<
 ```
 
-If not, run `conda init zsh` (or ``)
+If not, run `conda init zsh` (or `conda init <your_shell>`)
+
+Tell conda not to activate the base environment whenever you open a new shell.
+```zsh
+conda config --set auto_activate_base false
+```
+
+If not already there, it should create `~/.condarc` or add a setting if it already exists:
+```zsh
+auto_activate_base: false
+```
+
+
